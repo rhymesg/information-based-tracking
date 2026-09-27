@@ -8,6 +8,8 @@ Reusable MATLAB measurement models, Fisher information matrices, Cramér–Rao b
 
 Use the modules to compare sensor geometry, combine independent measurements, predict information, and evaluate uncertainty under Gaussian or non-Gaussian noise. Four [research applications](docs/papers.md) illustrate decentralized tracking, multisensor management, informative path planning, and Monte Carlo bound calculations.
 
+The decentralized-tracking and multisensor-management research has two related [granted Korean patents](#related-patents).
+
 ## Installation
 
 Open this directory as the current MATLAB folder or add it to the MATLAB path. The modules use base MATLAB and require no toolboxes or datasets.
@@ -88,6 +90,10 @@ Please cite the relevant paper when using its research methods:
 - Youngjoo Kim and Hyochoong Bang. “Monte-Carlo Calculation of Cramer-Rao Bound for non-Gaussian Recursive Filtering.” APISAT 2017. [Dedicated repository: MC_CRB_nonGaussian](https://github.com/rhymesg/MC_CRB_nonGaussian).
 
 [CITATION.cff](CITATION.cff) contains all four references. General measurement and information identities are not presented as inventions of these papers.
+
+## Related patents
+
+Patent records are listed by [research application](docs/papers.md#related-patents). This toolkit provides mathematical components; the papers' complete navigation controllers and sensor-management policies are not included.
 
 ## License
 

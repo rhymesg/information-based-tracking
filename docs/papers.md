@@ -62,6 +62,17 @@ The toolkit estimator uses `mean(score*score')`; it does not reproduce the sourc
 
 The full APISAT paper was unavailable for equation-level inspection; its citation and application description are grounded in the dedicated repository. No paper equation number is asserted for the alternative estimator. Its conditional observation information and plug-in inverse must not be presented as an exact recursive or Bayesian CRB.
 
+## Related patents
+
+The research applications have the following related granted Korean patents:
+
+| Research application | Patent record |
+|---|---|
+| Decentralized target tracking | [KR101745506B1 — A sensor guiding method for target tracking, and a sensor guiding system and an air vehicle using the same](https://patents.google.com/patent/KR101745506B1/en) |
+| Airborne multisensor management | [KR101921471B1 — Multi-sensor management system and method for multi-target tracking](https://patents.google.com/patent/KR101921471B1/en) |
+
+These records describe the related application research. The toolkit's implemented components and omitted controllers, deployment policies, and optimizers are identified in the application sections above.
+
 ## Reuse and attribution
 
 Use the APIs for the stated mathematical purposes and cite the relevant paper when applying its methods. The examples do not validate the papers' full algorithms or reproduce their simulations; [verification](verification.md) records checks of the implemented calculations.
