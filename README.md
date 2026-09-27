@@ -8,6 +8,8 @@ Use the modules to compare sensor geometry, combine independent measurements, pr
 
 The decentralized-tracking and multisensor-management research has two related [granted Korean patents](#related-patents).
 
+For Python, C++, or other-language implementations, use the [equations and array contracts](docs/algorithm.md), [statistical-information formulas](docs/statistical-information.md), and [worked examples](docs/examples.md).
+
 ## Method
 
 Turn a measurement Jacobian and noise covariance into Fisher information, combine independent information contributions, and evaluate local uncertainty bounds or log-determinant objectives. These building blocks connect sensor geometry to tracking and sensing decisions.
@@ -44,7 +46,7 @@ B = cramer_rao_bound(J);
 position_std_bound = sqrt(diag(B));
 ```
 
-Here `B = [2.08, 1.44; 1.44, 2.92]` m². For nonlinear models this is a bound evaluated at the supplied geometry; interpreting it as an exact Bayesian PCRLB requires more than a local Jacobian.
+Here `B = [2.08, 1.44; 1.44, 2.92]` m². For nonlinear models, this local linearized bound is evaluated at the supplied geometry.
 
 Run the sensor geometry example:
 
@@ -68,7 +70,7 @@ matlab -batch "example_nongaussian_information"
 
 ## Implementation scope
 
-The toolkit supplies measurement and information calculations for estimators and planners. Tracking filters, data association, deployment policies, and complete navigation controllers belong to the application layer; see the [paper-to-API mapping](docs/papers.md). The [verification guide](docs/verification.md) describes the analytical and source checks.
+The toolkit supplies measurement and information calculations that can be composed into estimators and planners. The [paper-to-API mapping](docs/papers.md) connects these components to research applications, and the [verification guide](docs/verification.md) describes analytical and source checks.
 
 ### Checks
 
@@ -93,7 +95,7 @@ Please cite the relevant paper when using its research methods:
 
 ## Related patents
 
-Patent records are listed by [research application](docs/papers.md#related-patents). This toolkit provides mathematical components; the papers' complete navigation controllers and sensor-management policies are not included.
+Patent records are listed by [research application](docs/papers.md#related-patents), alongside the connection between the papers and the toolkit's mathematical components.
 
 ## License
 
