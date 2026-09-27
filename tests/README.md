@@ -22,4 +22,4 @@ Run from the repository root:
 matlab -batch "addpath('tests'); run_tests"
 ```
 
-The runner restores the MATLAB path, opens no figures, and writes no files. Expected completion is `All information-based tracking checks passed.` Native execution status is documented in [verification](../docs/verification.md).
+The runner restores the MATLAB path, opens no figures, and writes no files. Expected completion is `All information-based tracking checks passed.` Independent analytical checks are described in [verification](../docs/verification.md).

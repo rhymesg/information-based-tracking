@@ -68,7 +68,7 @@ matlab -batch "example_nongaussian_information"
 
 ## Implementation scope
 
-The toolkit supplies measurement and information calculations for estimators and planners. Tracking filters, data association, deployment policies, and complete navigation controllers belong to the application layer; see the [paper-to-API mapping](docs/papers.md). Native MATLAB execution remains unverified; [verification status](docs/verification.md) records the available checks.
+The toolkit supplies measurement and information calculations for estimators and planners. Tracking filters, data association, deployment policies, and complete navigation controllers belong to the application layer; see the [paper-to-API mapping](docs/papers.md). The [verification guide](docs/verification.md) describes the analytical and source checks.
 
 ### Checks
 
