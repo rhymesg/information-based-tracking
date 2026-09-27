@@ -2,19 +2,37 @@
 
 ## Overview
 
-Repository: [rhymesg/information-based-tracking](https://github.com/rhymesg/information-based-tracking).
-
-Reusable MATLAB measurement models, Fisher information matrices, Cramér–Rao bounds (CRB), and information-based calculations for target tracking and sensor management.
+[Reusable MATLAB](https://github.com/rhymesg/information-based-tracking) measurement models, Fisher information matrices, Cramér–Rao bounds (CRB), and information-based calculations for target tracking and sensor management.
 
 Use the modules to compare sensor geometry, combine independent measurements, predict information, and evaluate uncertainty under Gaussian or non-Gaussian noise. Four [research applications](docs/papers.md) illustrate decentralized tracking, multisensor management, informative path planning, and Monte Carlo bound calculations.
 
 The decentralized-tracking and multisensor-management research has two related [granted Korean patents](#related-patents).
 
-## Installation
+## Method
 
-Open this directory as the current MATLAB folder or add it to the MATLAB path. The modules use base MATLAB and require no toolboxes or datasets.
+Turn a measurement Jacobian and noise covariance into Fisher information, combine independent information contributions, and evaluate local uncertainty bounds or log-determinant objectives. These building blocks connect sensor geometry to tracking and sensing decisions.
 
-## Usage
+### Find a calculation
+
+| Reader's purpose | Public API |
+|---|---|
+| Predict 2-D azimuth/range and differentiate sensor geometry | [azimuth_range_model](azimuth_range_model.m) |
+| Linearize a 3-D camera observation | [azimuth_elevation_model](azimuth_elevation_model.m) |
+| Add a range channel to a 3-D observation | [azimuth_elevation_range_model](azimuth_elevation_range_model.m) |
+| Calculate information from a measurement Jacobian and covariance | [measurement_information](measurement_information.m) |
+| Predict information under linear-Gaussian dynamics | [predict_information](predict_information.m) |
+| Invert nonsingular information to obtain a CRB matrix | [cramer_rao_bound](cramer_rao_bound.m) |
+| Sum 2-D sensor information and its position derivatives | [azimuth_range_information](azimuth_range_information.m) |
+| Evaluate a 2-D D-optimality objective and sensor gradients | [d_optimality](d_optimality.m) |
+| Evaluate a log-determinant cost, gradient, or cost rate | [logdet_information_cost](logdet_information_cost.m) |
+| Calculate Gaussian/Laplace log densities and location scores | [noise_log_likelihood](noise_log_likelihood.m) |
+| Estimate Fisher information from sampled score vectors | [monte_carlo_information](monte_carlo_information.m) |
+
+The [algorithm reference](docs/algorithm.md) specifies array shapes, units, covariance assumptions, singular cases, and bound interpretation.
+
+## Examples
+
+Open this directory as MATLAB's current folder or add it to the MATLAB path. The modules use base MATLAB and require no toolboxes or datasets.
 
 Calculate information and a local position bound from a 2-D azimuth/range sensor:
 
@@ -48,35 +66,17 @@ matlab -batch "example_nongaussian_information"
 
 [Examples and expected results](docs/examples.md) describe the deterministic geometry examples and the seeded Monte Carlo example.
 
-## Development
+## Implementation scope
 
-Run the complete test suite:
+The toolkit supplies measurement and information calculations for estimators and planners. Tracking filters, data association, deployment policies, and complete navigation controllers belong to the application layer; see the [paper-to-API mapping](docs/papers.md). Native MATLAB execution remains unverified; [verification status](docs/verification.md) records the available checks.
+
+### Checks
+
+Run the [test suite](tests/README.md), covering analytical fixtures, finite-difference derivatives, and Gaussian conditioning:
 
 ```bash
 matlab -batch "addpath('tests'); run_tests"
 ```
-
-[Test coverage](tests/README.md) includes analytical fixtures, finite-difference derivatives, and an information update compared with Gaussian covariance conditioning. [Verification status](docs/verification.md) records available checks; native MATLAB and Octave execution remain unverified.
-
-For a problem report, include the function, input arrays, MATLAB version, and error or unexpected result.
-
-## Find a calculation
-
-| Reader's purpose | Public API |
-|---|---|
-| Predict 2-D azimuth/range and differentiate sensor geometry | [azimuth_range_model](azimuth_range_model.m) |
-| Linearize a 3-D camera observation | [azimuth_elevation_model](azimuth_elevation_model.m) |
-| Add a range channel to a 3-D observation | [azimuth_elevation_range_model](azimuth_elevation_range_model.m) |
-| Calculate information from a measurement Jacobian and covariance | [measurement_information](measurement_information.m) |
-| Predict information under linear-Gaussian dynamics | [predict_information](predict_information.m) |
-| Invert nonsingular information to obtain a CRB matrix | [cramer_rao_bound](cramer_rao_bound.m) |
-| Sum 2-D sensor information and its position derivatives | [azimuth_range_information](azimuth_range_information.m) |
-| Evaluate a 2-D D-optimality objective and sensor gradients | [d_optimality](d_optimality.m) |
-| Evaluate a log-determinant cost, gradient, or cost rate | [logdet_information_cost](logdet_information_cost.m) |
-| Calculate Gaussian/Laplace log densities and location scores | [noise_log_likelihood](noise_log_likelihood.m) |
-| Estimate Fisher information from sampled score vectors | [monte_carlo_information](monte_carlo_information.m) |
-
-The [algorithm reference](docs/algorithm.md) specifies array shapes, units, covariance assumptions, singular cases, and bound interpretation. The toolkit supplies calculations for use in estimators and planners; it does not include tracking filters, data association, deployment policies, or navigation controllers.
 
 ## Papers and citation
 
