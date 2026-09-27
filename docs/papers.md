@@ -13,7 +13,7 @@ The [2016 paper](../README.md#papers-and-citation) uses information-based object
 | Accumulate local sensor information | [azimuth_range_information](../azimuth_range_information.m) | Measurement term of (3) |
 | Evaluate information-based geometry and gradients | [d_optimality](../d_optimality.m) | (4), (10)–(11), (23) |
 
-[example_sensor_geometry](../example_sensor_geometry.m) demonstrates these calculations on a circular sensor array and a local neighborhood. Navigation, obstacle avoidance, and convergence analysis are outside the toolkit.
+[example_sensor_geometry](../example_sensor_geometry.m) demonstrates these calculations on a circular sensor array and a local neighborhood. Refer to the paper for the navigation controller, obstacle avoidance, and convergence analysis.
 
 The published azimuth ratio is implemented with quadrant-preserving `atan2`. Differentiating the measurement Jacobian gives a `y^2` term in the bottom-right sensor-y derivative where printed equation (24) has `x^2`.
 
@@ -34,7 +34,7 @@ The [2015 paper](../README.md#papers-and-citation) uses information prediction a
 
 The camera elevation derivative with respect to target height is `rho/(rho^2+u^2)`. The archived implementation used `1/rho`; the toolkit corrects it. The separate azimuth/elevation/range model is an archive extension, not the paper's camera example.
 
-The priority/variance score, deployment policy, target-group search, placement optimizer, and sequential EKF are not implemented. The archived experimental scripts differ from the paper in their scores and active sensor model; their policy choices are not adopted here.
+Use these information components as inputs to a management policy; the paper supplies the priority score, deployment procedure, target-group selection, and sensor-placement method.
 
 ## Informative mobile-sensor dispatch
 
@@ -46,7 +46,7 @@ The [2019 Information Fusion paper](../README.md#papers-and-citation) studies di
 | Evaluate the cost's time derivative | Same API with `dJ = J_dot` | (15), `-0.5*trace(J\J_dot)` |
 | Model a 3-D angle/range observation | [azimuth_elevation_range_model](../azimuth_elevation_range_model.m) | (39), with quadrant-preserving angles and a differentiated Jacobian |
 
-The log-determinant module is independently implemented from the equations using a Cholesky factor and the full information matrix. The [statistical information reference](statistical-information.md) distinguishes cost gradients from the spatial gradient of the cost rate; neither the upstream steering law nor its full path planner is included.
+The log-determinant module is independently implemented from the equations using a Cholesky factor and the full information matrix. The [statistical information reference](statistical-information.md) distinguishes cost gradients from the spatial gradient of the cost rate; the dedicated mobile-sensor repository supplies the path-planning experiments.
 
 ## Monte Carlo non-Gaussian bounds
 
@@ -58,9 +58,9 @@ The [APISAT 2017 paper](../README.md#papers-and-citation) is associated with a o
 | Estimate information by averaging score outer products | [monte_carlo_information](../monte_carlo_information.m) | Related alternative to the upstream perturbation-based negative-Hessian estimator |
 | Compare Gaussian and non-Gaussian observation information | [example_nongaussian_information](../example_nongaussian_information.m) | Self-contained scalar location example |
 
-The toolkit estimator uses `mean(score*score')`; it does not reproduce the source's simultaneous perturbation Hessian calculation or recursive bound. Samples and parameter scores are supplied explicitly, leaving the model and sampling distribution to the caller.
+The toolkit estimator uses `J = (scores*scores')/N`, where each of the `N` columns contains one parameter-score vector. Samples and scores are supplied explicitly; the dedicated repository provides the separate perturbation-based Hessian calculation and recursive bound.
 
-The full APISAT paper was unavailable for equation-level inspection; its citation and application description are grounded in the dedicated repository. No paper equation number is asserted for the alternative estimator. Its conditional observation information and plug-in inverse must not be presented as an exact recursive or Bayesian CRB.
+This API estimates conditional observation information. Its plug-in inverse is interpreted under the [information and CRB contracts](algorithm.md#prediction-and-crb-interpretation); the dedicated repository implements the perturbation-based recursive comparison.
 
 ## Related patents
 
@@ -71,8 +71,8 @@ The research applications have the following related granted Korean patents:
 | Decentralized target tracking | [KR101745506B1 — A sensor guiding method for target tracking, and a sensor guiding system and an air vehicle using the same](https://patents.google.com/patent/KR101745506B1/en) |
 | Airborne multisensor management | [KR101921471B1 — Multi-sensor management system and method for multi-target tracking](https://patents.google.com/patent/KR101921471B1/en) |
 
-These records describe the related application research. The toolkit's implemented components and omitted controllers, deployment policies, and optimizers are identified in the application sections above.
+These records describe the related application research. The application sections map the toolkit's mathematical components to the papers.
 
 ## Reuse and attribution
 
-Use the APIs for the stated mathematical purposes and cite the relevant paper when applying its methods. The examples do not validate the papers' full algorithms or reproduce their simulations; [verification](verification.md) records checks of the implemented calculations.
+Use the APIs for the stated mathematical purposes and cite the relevant paper when applying its methods. [Verification](verification.md) records analytical fixtures and checks of the implemented calculations.

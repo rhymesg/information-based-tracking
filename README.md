@@ -82,6 +82,8 @@ matlab -batch "addpath('tests'); run_tests"
 
 ## Papers and citation
 
+For academic attribution, please acknowledge this repository when adapting its code or examples.
+
 The papers are examples of applying these mathematical building blocks. [Research applications](docs/papers.md) maps their equations to the APIs and distinguishes implemented calculations from application-specific algorithms.
 
 Please cite the relevant paper when using its research methods:
