@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: When applying the research methods illustrated here, please cite the relevant
+  paper listed in references.
+title: information-based-tracking
+type: software
+repository-code: https://github.com/rhymesg/information-based-tracking
+authors:
+- name: information-based-tracking contributors
+license: MIT
+keywords:
+- target tracking
+- Fisher information
+- Cramer-Rao bound
+- measurement models
+- sensor management
+- Monte Carlo
+- non-Gaussian noise
+- informative path planning
+references:
+- type: conference-paper
+  authors:
+  - family-names: Kim
+    given-names: Youngjoo
+  - family-names: Bang
+    given-names: Hyochoong
+  title: Decentralized Control of Multiple Unmanned Aircraft for Target Tracking and
+    Obstacle Avoidance
+  collection-title: 2016 International Conference on Unmanned Aircraft Systems (ICUAS)
+  year: 2016
+  start: 327
+  end: 331
+  doi: 10.1109/ICUAS.2016.7502547
+- type: conference-paper
+  authors:
+  - family-names: Kim
+    given-names: Youngjoo
+  - family-names: Bang
+    given-names: Hyochoong
+  title: Airborne Multisensor Management for Multitarget Tracking
+  collection-title: 2015 International Conference on Unmanned Aircraft Systems (ICUAS)
+  year: 2015
+  start: 751
+  end: 756
+  doi: 10.1109/ICUAS.2015.7152358
+- type: article
+  title: Real-time path planning to dispatch a mobile sensor into an operational area
+  authors:
+  - family-names: Kim
+    given-names: Youngjoo
+  - family-names: Jung
+    given-names: Wooyoung
+  - family-names: Bang
+    given-names: Hyochoong
+  journal: Information Fusion
+  volume: '45'
+  start: 27
+  end: 37
+  year: 2019
+  month: 1
+  doi: 10.1016/j.inffus.2018.01.010
+  url: https://doi.org/10.1016/j.inffus.2018.01.010
+- type: conference-paper
+  title: Monte-Carlo Calculation of Cramer-Rao Bound for non-Gaussian Recursive Filtering
+  authors:
+  - family-names: Kim
+    given-names: Youngjoo
+  - family-names: Bang
+    given-names: Hyochoong
+  collection-title: 2017 Asia-Pacific International Symposium on Aerospace Technology
+  year: 2017
+  url: https://github.com/rhymesg/MC_CRB_nonGaussian

@@ -1,0 +1,163 @@
+{
+  "archive": {
+    "file": "Multi-sensor manangement-20260927T092641Z-1-001.zip",
+    "sha256": "3173504075547477185926d9cbad3faa0783b0972c874b4f06baf3f805a0427f"
+  },
+  "paper": {
+    "file": "AirborneMultisensorManagementforMultitargetTrackingICUAS201520150611.pdf",
+    "sha256": "9e3b690cf2136c6f3441c00da9e4a026208cafef7b6ce704c2f7528d21fdc72e"
+  },
+  "latest_revision_status": "Unverified: no upstream revision or release history supplied.",
+  "entries": [
+    {
+      "path": "Multi-sensor manangement/best_near.m",
+      "sha256": "b932c181e157fdb0daa5b8edc5ced0389c121f0498a84cc95da3e4179c191f7d",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:12",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/altitude_with_coverage.m",
+      "sha256": "35ea62364ce84234f3b39650c4152b94e5e33b7152a15ac9879c48f7a4b2e418",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:12",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/score_s.m",
+      "sha256": "7ccb91cd3406bc560c4ffb9bba2f304c3537499bb5920b3e806ffbba3c124e7e",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:20",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/Problem_1_heu.m",
+      "sha256": "c847f411c26cc072802c02a626d9a49b8b221c77f1242a0b7ea1a3f61d00ccb1",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:20",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/get_score.m",
+      "sha256": "d7a752e0de3413e4a039dbac610262ab0c4f74dd7625e0ba32416306132db4ae",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:14",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/plot_surface.m",
+      "sha256": "7e4ee1a2202e2b245df864d2a842d7fc29c6b6e309400596763b565a26f0a5df",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:20",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/Kim6.png",
+      "sha256": "95d53a6cbb66067a50167c323612166d158701a119dd4bea785208d3575268ae",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:16",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/controller.m",
+      "sha256": "bf79034d87dbf03328bb8b59541dcb88e45e66917c832ec12eced4e128f2a9db",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:12",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/measurement_model_AE.m",
+      "sha256": "1a910504bb5d63b502a087ae26eacfd877da762426b2604e58936c438fe1b788",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:18",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/EKF_meas.m",
+      "sha256": "a2a69eaa2895c36f024c55e1573485343ed87430bfa6967f9fc63bcf452b1126",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:14",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/FIM_meas.m",
+      "sha256": "6031f0882527d89cb055d130b3da650651cfaecbffcebcbe3bb54ff92170494b",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:14",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/FIM_prop.m",
+      "sha256": "7f6cca7f3ab170c4d2a47bdcbd82e21d3373981a3514715550c001cf8cd20dc8",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:14",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/Kim3.png",
+      "sha256": "25554465c2f2412b13e7b1433987e304d1a6980d9703484e61f54f3e8763ab1a",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:16",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/get_score2.m",
+      "sha256": "0ca99a543d0ca7cb28c25c49de76bbc7ffd78d322d00d9db8456bd2cc26ab4e3",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:14",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/get_score3.m",
+      "sha256": "fcee4911118e27f6bfba37815c014f4913b6d573706c6388104afc99b81e114b",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:16",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/main.m",
+      "sha256": "dc780f8f0d0036b24b2ddf7f5384a9741739504d817bcf940e77e766c01a39fe",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:18",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/Problem_1.m",
+      "sha256": "fb15b420e44024b39ffb7708a6b14e513456cea01e93a7170347a93155f4bee2",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:20",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/main_AMSMTT_old.m",
+      "sha256": "f816a95669581f36b73c41322d202dd2f6fa2d207e56b03f1122dfc261be4345",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:18",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/measurement_model_AER.m",
+      "sha256": "bb342df53f1b13e1f0d207c1261b930450bef91cbf95565d0b12f9e3fd6d825e",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:18",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/new_configuration.m",
+      "sha256": "1eece12b58d6276a96c0b906d916cb8d678d919c992562878fbb3a313336eb84",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:18",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/EKF_prop.m",
+      "sha256": "625b7e5187ed91861ec389c83487d7eeec2584b8b5eebc1770f21e87cc355e2b",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:14",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/Kim5.png",
+      "sha256": "ca26774d834e02bce2fa35d207099aa2295044905b9259f2be848be1085d753d",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:16",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/cov_prop.m",
+      "sha256": "4a1045f001f4e9d0ed55bc2ed9b8b664fe4c75aaeec0f4810ae52531f66a799a",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:12",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/grad_s.m",
+      "sha256": "b796ff91f429047c44b20b6c699764ae6fe59fcedf5a6e9efe698bf774eaa7ac",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:16",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "Multi-sensor manangement/cov_meas.m",
+      "sha256": "45f3de4027003ddd844a2cec1f55e68e66ae20b0e2cdd839cd150bbf0c8b9df3",
+      "zip_mtime_no_timezone": "2018-05-20T09:00:12",
+      "extracted_copy_matches": true
+    }
+  ]
+}

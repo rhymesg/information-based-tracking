@@ -1,0 +1,67 @@
+{
+  "archive": {
+    "file": "decentralized target tracking-20260927T093835Z-1-001.zip",
+    "sha256": "b79dff162671204d64c85f85bcd32402980d927fdbb68b512020f2ed11b69cab"
+  },
+  "paper": {
+    "file": "0048.pdf",
+    "sha256": "566f51c752c9adf504ac2cec10c0c3141bd31ff4d0bf270664946b6955fc7c67"
+  },
+  "latest_revision_status": "Unverified: no upstream revision or release history supplied.",
+  "entries": [
+    {
+      "path": "decentralized target tracking/main_prev.m",
+      "sha256": "2e9dc36866eb213dd7815071309bbf9af384b1af63d1c5b419024dd0fc334617",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/measurement_model_AE.m",
+      "sha256": "fdd1264e01d971f04edb57d2e6cc5af75cabd3ef66ea189f43981a19dedab7f6",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:38",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/bet_prev.m",
+      "sha256": "869cc7c9ce435628fee98326a643a90c919ff848b4ba9895c54c09080a900513",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/goa.m",
+      "sha256": "fdf615eeaa8c8748237d2dddd920cb80cca79aadcd54814e6621069771e7c663",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/main.m",
+      "sha256": "3ce815f5979821e7b1df8d9e365492bafab5889fcd4ace134151b3a1633abb94",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/bet.m",
+      "sha256": "262ba321628edc9c188514b05fe5f7f2b4f9ad2fd1f952fec7ba8352677fb398",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:34",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/goa_prev.m",
+      "sha256": "e51cf3f9939b525110dab57bdd805127f95c7e6679b87e6fc7a9bdf2121c4a31",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/measurement_model_AR.m",
+      "sha256": "3f3faa3a00fb5a34a4cc4eba1000fab24096f5c531d0d32ca183ebf97a143440",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    },
+    {
+      "path": "decentralized target tracking/test.m",
+      "sha256": "b9dd31070ed167b38557a2eec439a64f5bc034f2acd1eedf1a54ea612bf4e83d",
+      "zip_mtime_no_timezone": "2018-05-20T08:59:36",
+      "extracted_copy_matches": true
+    }
+  ]
+}
